@@ -16,10 +16,10 @@ Twitterの背景画像に設定します。
 How to develop
 ----------------------------------------
 
-```conf/application.conf```に
+`conf/application.conf` に
 [楽天ウェブサービス](http://webservice.rakuten.co.jp/)の
 applicationIdを、
-```Procfile```にTwitterAPIの各種認証情報を記入してください。
+`Procfile`にTwitterAPIの各種認証情報を記入してください。
 
 あとは[heroku](http://www.heroku.com/)上にデプロイすると動くと思います。
 
@@ -27,7 +27,7 @@ applicationIdを、
 [sbt](http://www.scala-sbt.org/)をインストールし、
 以下のコマンドを実行すると動きます。
 
-```
+```bash
 sbt -Doauth.consumerKey=*** -Doauth.consumerSecret=*** -Doauth.accessToken=*** -Doauth.accessTokenSecret=*** run
 ```
 
